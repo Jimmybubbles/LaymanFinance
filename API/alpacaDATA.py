@@ -39,3 +39,14 @@ pd.set_option('display.max_rows', None)
 
 
 print(daily_bars)
+
+# Have to get the stock data into a sqldb next.
+
+# # Write dataframe to sql db (name the db daily_data)
+# daily_bars.to_sql('daily_data', con=db_engine)
+
+# # Verify the columns/keys which were created
+# db_engine.execute("SELECT * FROM daily_data").keys()
+
+# # Read database to see if it worked
+# db_engine.execute("SELECT * FROM daily_data").fetchall()
